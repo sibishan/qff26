@@ -161,6 +161,8 @@ section{padding-block:clamp(64px,10vw,120px);position:relative}
 .club img{height:52px;width:auto;flex:none}
 .club b{display:block}
 .club span{color:var(--ink-dim);font-size:.9rem}
+.fineprint{margin:1.2rem 0 0;color:var(--ink-dim);font-size:.82rem;line-height:1.5}
+.fineprint b{color:var(--ink)}
 .notice{margin-top:1.5rem;background:rgba(255,126,182,.12);border:2px dashed var(--pink);border-radius:16px;padding:1rem 1.2rem;font-size:.95rem}
 
 /* ---------- faq ---------- */
@@ -352,7 +354,7 @@ footer{background:var(--bg-2);padding-block:3rem 2rem;border-top:1px solid rgba(
     <div class="day">
       <div class="block">
         <h3>☀️ Morning</h3>
-        <div class="slot"><time>8:30 AM</time><div><b>Registration begins</b><span>Doors open. Grab a name tag. Say hi to someone.</span></div></div>
+        <div class="slot"><time>8:30 AM</time><div><b>Check in opens</b><span>Doors open. Grab a name tag. Say hi to someone.</span></div></div>
         <div class="slot"><time>9:00 AM</time><div><b>Opening ceremony</b><span>Short. We promise.</span></div></div>
         <div class="slot hot"><time>9:15 AM</time><div><b>Quantum Computing &amp; Qiskit 101</b><span>Zero to your first circuit on a real toolkit. No maths degree required.</span></div></div>
         <div class="slot"><time>11:30 AM</time><div><b>Hackathon briefing</b><span>The theme, the rules, the submission form.</span></div></div>
@@ -390,6 +392,7 @@ footer{background:var(--bg-2);padding-block:3rem 2rem;border-top:1px solid rgba(
           <a class="btn btn-ghost" href="https://discord.gg/Tc3mNRERv5" target="_blank" rel="noopener">Join our Discord ↗</a>
         </div>
         <div class="notice">📍 <b>Venue:</b> somewhere at UTS. The exact room is currently in a superposition of several buildings and will collapse to one closer to the date. Registered attendees get an email, and we'll announce it on <a href="https://discord.gg/Tc3mNRERv5" target="_blank" rel="noopener">Discord</a> too. <button id="measure" class="pill" type="button" style="cursor:pointer;color:var(--ink);margin-left:.4em">Measure it</button></div>
+        <p class="fineprint">📸 <b>Photo release:</b> we take photos and video at the event. By registering you agree that Quantum@UTS, ProgSoc, Activate UTS and IBM Quantum may use them to promote this and future events. If you'd rather not be in them, tell us at check in and we'll keep you out of frame.</p>
       </div>
       <div class="clubs">
         <a class="club" href="https://www.activateuts.com.au/clubs/quantum-society/" target="_blank" rel="noopener">
