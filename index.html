@@ -175,6 +175,13 @@ details[open] summary::after{transform:rotate(45deg)}
 details .a{padding:0 1.3rem 1.2rem;color:var(--ink-dim)}
 details .a p:last-child{margin-bottom:0}
 
+/* ---------- sponsors ---------- */
+.sponsor-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:1.4rem;margin-top:2rem}
+.sponsor{display:flex;align-items:center;justify-content:center;background:var(--card);border:2px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:2rem 2.6rem;min-width:min(100%,300px);transition:transform .15s,border-color .15s}
+.sponsor:hover{transform:translateY(-4px);border-color:var(--gold)}
+.sponsor img{height:56px;width:auto}
+@media (max-width:520px){.sponsor{padding:1.4rem 1.6rem;width:100%}.sponsor img{height:44px}}
+
 /* ---------- footer ---------- */
 footer{padding-block:3rem 2rem;border-top:1px solid rgba(255,255,255,.08)}
 .logos{display:flex;flex-wrap:wrap;gap:2.2rem 3rem;align-items:center;justify-content:center;margin-bottom:2rem}
@@ -203,6 +210,7 @@ footer{padding-block:3rem 2rem;border-top:1px solid rgba(255,255,255,.08)}
       <li><a href="#jam">The jam</a></li>
       <li><a href="#schedule">Schedule</a></li>
       <li><a href="#faq">FAQ</a></li>
+      <li><a href="#sponsors">Sponsors</a></li>
       <li class="always"><a class="btn btn-primary" href="#register">Register</a></li>
     </ul>
   </div>
@@ -448,13 +456,24 @@ footer{padding-block:3rem 2rem;border-top:1px solid rgba(255,255,255,.08)}
   </div>
 </section>
 
+<!-- ====== SPONSORS ====== -->
+<section class="sponsors" id="sponsors">
+  <div class="wrap">
+    <p class="eyebrow" style="text-align:center">Sponsors</p>
+    <h2 style="text-align:center">Made possible by</h2>
+    <div class="sponsor-grid">
+      <a class="sponsor" href="https://www.ibm.com/quantum" target="_blank" rel="noopener"><img src="img/ibm-quantum-white.png" alt="IBM Quantum" width="600" height="85"></a>
+      <a class="sponsor" href="https://www.activateuts.com.au/" target="_blank" rel="noopener"><img src="img/activateuts.png" alt="Activate UTS" width="600" height="190"></a>
+    </div>
+  </div>
+</section>
+
 <!-- ====== FOOTER ====== -->
 <footer>
   <div class="wrap">
     <div class="logos">
       <a href="https://www.activateuts.com.au/clubs/quantum-society/" target="_blank" rel="noopener"><img src="img/quts-logo-text.png" alt="Quantum@UTS" width="720" height="193"></a>
       <a href="https://www.activateuts.com.au/clubs/programmers-society-progsoc/" target="_blank" rel="noopener"><img class="tall" src="img/progsoc-logo.png" alt="ProgSoc" width="360" height="255"></a>
-      <a href="https://www.ibm.com/quantum" target="_blank" rel="noopener"><img src="img/ibm-quantum-white.png" alt="IBM Quantum" width="600" height="85"></a>
     </div>
     <p class="fine">Qiskit Fall Fest 2026 @ UTS is hosted by Quantum@UTS in collaboration with ProgSoc. Qiskit Fall Fest is a collection of quantum computing events on college campuses around the world, supported by IBM Quantum.</p>
     <br>
